@@ -1,5 +1,5 @@
 "use client";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, Variants } from "motion/react";
 import { useEffect, useState } from "react";
 import { HamburgerButton } from "./components/HamburgerButton";
 import About from "./components/About/About";
@@ -39,7 +39,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 12, scale: 0.98 },
   visible: {
     opacity: 1,
