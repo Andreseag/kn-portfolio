@@ -1,8 +1,9 @@
 import { motion, Transition } from "motion/react";
+import { Dispatch, SetStateAction } from "react";
 
 interface HamburgerButtonInterface {
   open: boolean;
-  setOpen: (v: any) => boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
   className: string;
 }
 
