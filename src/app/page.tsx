@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 import { HamburgerButton } from "./components/HamburgerButton";
 import About from "./components/About/About";
+import Video from "./components/Video";
 
 const links = [
   "Inicio",
@@ -190,6 +191,9 @@ export default function Home() {
 
       {/* About */}
       <About />
+
+      {/* Video */}
+      <Video />
     </>
   );
 }

@@ -1,13 +1,23 @@
-import { motion } from "motion/react";
+import { motion, Transition } from "motion/react";
 
-export function HamburgerButton({ open, setOpen, className = "" }) {
+interface HamburgerButtonInterface {
+  open: boolean;
+  setOpen: (v: any) => boolean;
+  className: string;
+}
+
+export function HamburgerButton({
+  open,
+  setOpen,
+  className = "",
+}: HamburgerButtonInterface) {
   // Ajusta estos valores si cambias el tamaño del icono
   const width = 28; // ancho en px (w-7 ≈ 28px)
   const height = 24; // alto en px (h-6 ≈ 24px)
   const lineHeight = 2; // grosor en px (h-[2px])
   const offset = 6; // cuánto se mueven top/bottom hacia el centro (ajusta si cambias height)
 
-  const transition = { duration: 0.28, ease: "easeInOut" };
+  const transition: Transition = { duration: 0.28, ease: "easeInOut" };
 
   const topVariant = {
     closed: { rotate: 0, y: 0 },
@@ -29,7 +39,7 @@ export function HamburgerButton({ open, setOpen, className = "" }) {
       type="button"
       aria-label={open ? "Cerrar menú" : "Abrir menú"}
       aria-expanded={open}
-      onClick={() => setOpen((v) => !v)}
+      onClick={() => setOpen((v: boolean) => !v)}
       className={`inline-flex items-center justify-center p-2 rounded-md text-current ${className}`}>
       {/* contenedor relativo controla el tamaño del icono */}
       <div

@@ -1,5 +1,6 @@
 .main {
   height: 100vh;
+  background-color: #dcdbdb;
 
   .mask,
   .body {
@@ -8,9 +9,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #afa18f;
-    font-size: 58px;
-    line-height: 66px;
+    color: #010101;
+    font-size: 40px;
+    line-height: 50px;
     cursor: default;
 
     p {
@@ -23,11 +24,12 @@
   }
 
   .mask {
-    mask-image: url("../../../../public/mask.svg");
+    // mask-image: url("../../../../public/mask.svg");
+    mask-image: url("../../../../public/mask-2.svg");
     mask-repeat: no-repeat;
     mask-size: 40px;
-    background: #ec4e39;
+    background: #010101;
     position: absolute;
-    color: black;
+    color: #ec4e39;
   }
 }
