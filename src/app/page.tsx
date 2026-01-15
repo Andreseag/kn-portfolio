@@ -9,6 +9,7 @@ import Logo from "./components/Logo";
 import ProjectList from "./components/ProjectList/ProjectList";
 import Agend from "./components/Agend";
 import Gallery from "./components/Gallery/Gallery";
+import ServicesDescription from "./components/ServicesDescription/ServicesDescription";
 
 const links = [
   "Inicio",
@@ -159,6 +160,9 @@ export default function Home() {
 
       {/* Gallery */}
       <Gallery />
+
+      {/* Services descriptions */}
+      <ServicesDescription />
     </>
   );
 }
