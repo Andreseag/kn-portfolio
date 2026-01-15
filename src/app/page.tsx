@@ -7,6 +7,7 @@ import Video from "./components/Video";
 import TextScrolling from "./components/About/components/TextScrolling";
 import Logo from "./components/Logo";
 import ProjectList from "./components/ProjectList/ProjectList";
+import Agend from "./components/Agend";
 
 const links = [
   "Inicio",
@@ -152,8 +153,8 @@ export default function Home() {
       {/* Project list */}
       <ProjectList />
 
-      {/*  */}
-      <div className="h-[1200px]"></div>
+      {/* Agend  */}
+      <Agend />
     </>
   );
 }
