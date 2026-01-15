@@ -8,6 +8,7 @@ import TextScrolling from "./components/About/components/TextScrolling";
 import Logo from "./components/Logo";
 import ProjectList from "./components/ProjectList/ProjectList";
 import Agend from "./components/Agend";
+import Gallery from "./components/Gallery/Gallery";
 
 const links = [
   "Inicio",
@@ -155,6 +156,9 @@ export default function Home() {
 
       {/* Agend  */}
       <Agend />
+
+      {/* Gallery */}
+      <Gallery />
     </>
   );
 }

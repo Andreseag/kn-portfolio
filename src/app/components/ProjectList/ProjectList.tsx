@@ -30,7 +30,7 @@ const ProjectList = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}>
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-0" />
+          <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all ease-in z-0" />
 
           {/* Texto */}
           <div className="absolute z-10 text-center">
