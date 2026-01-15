@@ -13,7 +13,7 @@ export function HamburgerButton({
   className = "",
 }: HamburgerButtonInterface) {
   // Ajusta estos valores si cambias el tamaño del icono
-  const width = 28; // ancho en px (w-7 ≈ 28px)
+  const width = 38; // ancho en px (w-7 ≈ 28px)
   const height = 24; // alto en px (h-6 ≈ 24px)
   const lineHeight = 2; // grosor en px (h-[2px])
   const offset = 6; // cuánto se mueven top/bottom hacia el centro (ajusta si cambias height)

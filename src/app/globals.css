@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #a5925f;
 }
 
 @theme inline {
@@ -17,6 +18,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+::selection {
+  background-color: var(--primary-color); /* color de fondo */
+  color: #ffffff; /* color del texto */
 }
 
 body {

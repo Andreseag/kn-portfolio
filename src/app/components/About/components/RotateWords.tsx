@@ -21,6 +21,8 @@ export function RotateWords({
     <div className="text-8xl tracking-tighter md:leading-[4rem] mt-8 w-fit flex items-center jusitfy-center gap-1.5">
       <AnimatePresence mode="wait">
         <motion.p
+          className="text-[#A5925F]"
+          // className="text-[#AB5849]"
           key={words[index]}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

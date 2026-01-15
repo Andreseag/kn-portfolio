@@ -21,8 +21,8 @@ export default function About() {
   const size = isHovered ? 400 : 40;
 
   return (
-    <section className={styles.main}>
-      <h2 className="absolute text-8xl p-20 text-[#010101]">
+    <section className="py-48">
+      <h2 className="text-8xl p-20 pt-0 text-[#010101]">
         Arquitectura <br />
         <RotateWords
           text="Rotate"
@@ -30,7 +30,7 @@ export default function About() {
         />
       </h2>
 
-      <motion.div
+      {/* <motion.div
         className={styles.mask}
         animate={{
           webkitMaskPosition: `${xNum - size / 2}px ${yNum - size / 2}px`,
@@ -47,17 +47,24 @@ export default function About() {
           nuestros proyectos. Disfrutamos de cada detalle y vivimos apasionados
           por el diseño y la arquitectura.
         </p>
-      </motion.div>
+      </motion.div> */}
 
-      <div className={styles.body}>
-        <p>
-          ¡Hola! Soy Karen Narvaez, arquitecta y directora general de EPV
-          Estudio de Arquitectura en la ciudad de Rosario, Argentina. <br />
-          Cuento con un equipo de trabajo compuesto por profesionales de la
-          arquitectura y nos caracterizamos por poner el corazón en cada uno de
-          nuestros proyectos. Disfrutamos de cada detalle y vivimos apasionados
-          por el diseño y la arquitectura.
-        </p>
+      <div className="flex justify-center mt-20">
+        <div className="w-1/3">
+          <p className="text-2xl text-black text-center leading-8 font-light mb-8">
+            ¡Hola! Soy Larson Rodríguez, arquitecto. Trabajo de forma directa en
+            cada proyecto y cuento con un equipo de colaboradores que me
+            acompaña en las distintas etapas del proceso. Nos caracteriza el
+            compromiso, la atención al detalle y una forma de trabajar cercana,
+            donde cada decisión se toma con dedicación y criterio profesional.
+          </p>
+          <p className="text-2xl text-black text-center leading-8 font-light">
+            Abordo cada proyecto con el objetivo de diseñar espacios que
+            respondan a las necesidades reales y a la forma de vivir de quienes
+            los habitan, buscando soluciones funcionales, claras y pensadas a
+            medida.
+          </p>
+        </div>
       </div>
     </section>
   );

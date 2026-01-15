@@ -1,6 +1,7 @@
 .main {
   height: 100vh;
-  background-color: #dcdbdb;
+  // background-color: #f0f0f0;
+  background-color: #fff;
 
   .mask,
   .body {
@@ -19,7 +20,7 @@
       padding: 40px;
     }
     span {
-      color: #ec4e39;
+      color: #fff;
     }
   }
 
@@ -30,6 +31,6 @@
     mask-size: 40px;
     background: #010101;
     position: absolute;
-    color: #ec4e39;
+    color: #a5925f;
   }
 }
