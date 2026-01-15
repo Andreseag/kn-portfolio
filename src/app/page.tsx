@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Video from "./components/Video";
 import TextScrolling from "./components/About/components/TextScrolling";
 import Logo from "./components/Logo";
+import ProjectList from "./components/ProjectList/ProjectList";
 
 const links = [
   "Inicio",
@@ -147,6 +148,9 @@ export default function Home() {
 
       {/*  */}
       <TextScrolling txt="Proyectos" />
+
+      {/* Project list */}
+      <ProjectList />
 
       {/*  */}
       <div className="h-[1200px]"></div>
