@@ -10,6 +10,7 @@ import ProjectList from "./components/ProjectList/ProjectList";
 import Agend from "./components/Agend";
 import Gallery from "./components/Gallery/Gallery";
 import ServicesDescription from "./components/ServicesDescription/ServicesDescription";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 const links = [
   "Inicio",
@@ -163,6 +164,9 @@ export default function Home() {
 
       {/* Services descriptions */}
       <ServicesDescription />
+
+      {/* About me */}
+      <AboutMe />
     </>
   );
 }
