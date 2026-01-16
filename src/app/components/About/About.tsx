@@ -1,8 +1,6 @@
 "use client";
 
-import styles from "./About.module.scss";
 import { useState } from "react";
-import { motion } from "motion/react";
 import useMousePosition from "../../hooks/useMousePosition";
 import { RotateWords } from "./components/RotateWords";
 

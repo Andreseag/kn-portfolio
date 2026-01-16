@@ -1,7 +1,6 @@
 "use client";
 import About from "./components/About/About";
 import Video from "./components/Video";
-import TextScrolling from "./components/About/components/TextScrolling";
 import ProjectList from "./components/ProjectList/ProjectList";
 import Agend from "./components/Agend";
 import Gallery from "./components/Gallery/Gallery";
@@ -11,12 +10,14 @@ import AgendCalendar from "./components/AgendCalendar/AgendCalendar";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 
 export default function Home() {
   return (
     <>
       {/* Header */}
       <Header />
+
       {/* Hero */}
       <Hero />
 
@@ -46,6 +47,9 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
+
+      {/* WhatsAppButton */}
+      <WhatsAppButton phoneNumber="573219500664" />
     </>
   );
 }

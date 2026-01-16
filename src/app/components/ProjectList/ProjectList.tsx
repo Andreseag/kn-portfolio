@@ -19,7 +19,7 @@ const cardVariants: Variants = {
 
 const ProjectList = () => {
   return (
-    <>
+    <div id="projects" className="projects">
       {/* Text */}
       <TextScrolling txt="Proyectos" />
       <section
@@ -57,7 +57,7 @@ const ProjectList = () => {
           </motion.a>
         ))}
       </section>
-    </>
+    </div>
   );
 };
 
