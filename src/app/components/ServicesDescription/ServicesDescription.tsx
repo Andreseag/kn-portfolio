@@ -2,7 +2,7 @@ import Accordion from "../Accordeon/Accordeon";
 
 const ServicesDescription = () => {
   return (
-    <div className="services-description py-60">
+    <div id="services-description" className="services-description py-60">
       <section className="services-description__container py-30 px-8">
         <div className="service-element flex justify-between items-center gap-8">
           <div className="service-element__description text-black w-2/5">

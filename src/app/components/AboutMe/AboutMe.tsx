@@ -6,7 +6,7 @@ const AboutMe = () => {
   const { scrollToElement } = useScrollTo();
 
   return (
-    <section className="about-me py-24 px-10 bg-black">
+    <section id="about-me" className="about-me py-24 px-10 bg-black">
       <div className="about-me__container flex gap-24">
         <div className="about-me__info w-1/2">
           <span>ESTUDIO DE ARQUITECTURA</span>
