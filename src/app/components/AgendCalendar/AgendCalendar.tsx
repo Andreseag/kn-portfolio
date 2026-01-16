@@ -10,7 +10,9 @@ const AgendCalendar = () => {
   }, []);
 
   return (
-    <section className="agend-calendar py-24 px-10 bg-black">
+    <section
+      id="agend-calendar"
+      className="agend-calendar py-24 px-10 bg-black">
       <div className="agend-calendar__container">
         <div className="agend-calendar__title">
           <h2 className="text-9xl text-center text-[#a5925f] mb-12 mt-4">

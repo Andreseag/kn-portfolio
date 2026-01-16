@@ -1,12 +1,16 @@
-import React from "react";
+import Image from "next/image";
+import { useScrollTo } from "@/app/hooks/useScrollTo";
+import CustomButton from "../CutomButton/CutomButton";
 
 const AboutMe = () => {
+  const { scrollToElement } = useScrollTo();
+
   return (
     <section className="about-me py-24 px-10 bg-black">
       <div className="about-me__container flex gap-24">
         <div className="about-me__info w-1/2">
           <span>ESTUDIO DE ARQUITECTURA</span>
-          <h2 className="text-9xl text-[#a5925f] mb-8 mt-4">Sobre mí</h2>
+          <h2 className="text-9xl text-[#a5925f] mb-8 mt-2">Sobre mí</h2>
           <p className="mb-14 text-lg">
             <span className="text-[#a5925f] font-bold">Larson Rodriguez</span>{" "}
             es arquitecto titulado y dirige su propio estudio, Larson Rodriguez
@@ -65,15 +69,19 @@ const AboutMe = () => {
             </p>
           </div>
 
-          {/* Contact button */}
-          <button className="h-20 cursor-pointer flex justify-center items-center text-white border px-10 rounded-full transition-all ease-in hover:opacity-70 hover:underline">
-            ADENDA UNA SESIÓN
-          </button>
+          <CustomButton
+            txt="AGENDA UNA SESIÓN"
+            onClick={() => scrollToElement("agend-calendar")}
+          />
         </div>
         <div className="about-me__photo">
-          <img
-            src="https://epvarquitectura.com.ar/wp-content/uploads/2024/06/Ezequiel-Perez-Villalba-1.webp"
-            alt="Profile Image"
+          {/* Reference from the root of the public folder */}
+          <Image
+            src="/images/profile-larson.jpg"
+            alt="Profile image"
+            width={800} // Desired width
+            height={1300} // Desired height
+            priority // Use this for Above-the-Fold images
           />
         </div>
       </div>
