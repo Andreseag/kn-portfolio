@@ -33,11 +33,12 @@ export default function ScrollTextLeft({
   return (
     <section
       ref={ref}
-      className="flex justify-center items-center overflow-hidden"
-      style={{ height }}>
+      className="flex justify-center items-center overflow-hidden h-[180px] md:h-[300px]"
+      // style={{ height }}
+    >
       <motion.h2
         style={{ x }}
-        className="whitespace-nowrap text-center text-[130px] text-gray-950"
+        className="whitespace-nowrap text-center text-7xl lg:text-[130px] text-gray-950"
         // usa tamaño con Tailwind o inline style si prefieres px/rem
       >
         {txt}

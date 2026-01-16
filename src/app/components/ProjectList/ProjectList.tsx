@@ -24,7 +24,7 @@ const ProjectList = () => {
       <TextScrolling txt="Proyectos" />
       <section
         id="projects-list"
-        className="projects-list grid grid-cols-1 gap-20 p-8">
+        className="projects-list grid grid-cols-1 gap-10 md:gap-20 p-8">
         {projects.map((project) => (
           <motion.a
             key={project.id}

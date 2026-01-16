@@ -21,7 +21,7 @@ const Accordion = () => {
               onClick={() => toggleItem(item.id)}
               className="flex w-full items-center justify-between text-left text-lg font-medium cursor-pointer"
               aria-expanded={isOpen}>
-              <span className="text-3xl">{item.title}</span>
+              <span className="lg:text-3xl">{item.title}</span>
               <span className="text-4xl">{isOpen ? "−" : "+"}</span>
             </button>
 

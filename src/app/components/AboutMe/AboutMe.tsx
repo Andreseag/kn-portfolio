@@ -6,11 +6,13 @@ const AboutMe = () => {
   const { scrollToElement } = useScrollTo();
 
   return (
-    <section id="about-me" className="about-me py-24 px-10 bg-black">
-      <div className="about-me__container flex gap-24">
-        <div className="about-me__info w-1/2">
+    <section id="about-me" className="about-me py-24 px-6 md:px-10 bg-black">
+      <div className="about-me__container flex flex-col-reverse md:flex-row gap-24">
+        <div className="about-me__info md:w-1/2">
           <span>ESTUDIO DE ARQUITECTURA</span>
-          <h2 className="text-9xl text-[#a5925f] mb-8 mt-2">Sobre mí</h2>
+          <h2 className="text-7xl md:text-9xl text-[#a5925f] mb-8 mt-2">
+            Sobre mí
+          </h2>
           <p className="mb-14 text-lg">
             <span className="text-[#a5925f] font-bold">Larson Rodriguez</span>{" "}
             es arquitecto titulado y dirige su propio estudio, Larson Rodriguez
