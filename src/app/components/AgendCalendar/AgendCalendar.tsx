@@ -25,7 +25,7 @@ const AgendCalendar = () => {
 
         <div className="calendar mt-4">
           {/* Solo renderizamos el widget si el componente ya se montó en el cliente */}
-          {mounted ? (
+          {/* {mounted ? (
             <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/andreseag/15min"
@@ -33,7 +33,11 @@ const AgendCalendar = () => {
           ) : (
             // Un div vacío con la misma altura para evitar saltos visuales (CLS)
             <div style={{ minWidth: "320px", height: "700px" }}></div>
-          )}
+          )} */}
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/andreseag/15min"
+            style={{ minWidth: "320px", height: "700px" }}></div>
         </div>
 
         <div className="agend-calendar__logo flex justify-center mt-10">
