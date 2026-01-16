@@ -14,7 +14,7 @@ const AgendCalendar = () => {
       <div className="agend-calendar__container">
         <div className="agend-calendar__title">
           <h2 className="text-9xl text-center text-[#a5925f] mb-12 mt-4">
-            Agendá una sesión
+            Agenda una sesión
           </h2>
           <p className="text-3xl text-center text-white">
             Ayudamos a familias a construir su vivienda en terreno propio.

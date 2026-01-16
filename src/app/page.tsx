@@ -12,6 +12,7 @@ import Gallery from "./components/Gallery/Gallery";
 import ServicesDescription from "./components/ServicesDescription/ServicesDescription";
 import AboutMe from "./components/AboutMe/AboutMe";
 import AgendCalendar from "./components/AgendCalendar/AgendCalendar";
+import Footer from "./components/Footer/Footer";
 
 const links = [
   "Inicio",
@@ -171,6 +172,9 @@ export default function Home() {
 
       {/* Agend Calendar */}
       <AgendCalendar />
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
