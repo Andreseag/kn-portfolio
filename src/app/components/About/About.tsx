@@ -20,7 +20,7 @@ export default function About() {
 
   return (
     <section className="py-24 lg:py-48">
-      <h2 className="text-6xl lg:text-8xl p-10 md:p-20 pt-0 text-[#010101]">
+      <h2 className="text-5xl lg:text-8xl p-10 md:p-20 pt-0 text-[#010101]">
         Arquitectura <br />
         <RotateWords
           text="Rotate"
@@ -47,7 +47,7 @@ export default function About() {
         </p>
       </motion.div> */}
 
-      <div className="flex justify-center mt-0 lg:mt-20 px-12">
+      <div className="flex justify-center mt-0 lg:mt-20 px-8 md:px-12">
         <div className="md:w-1/3">
           <p className="text-lg md:text-2xl text-black text-center leading-8 font-light mb-8">
             ¡Hola! Soy Larson Rodríguez, arquitecto. Trabajo de forma directa en

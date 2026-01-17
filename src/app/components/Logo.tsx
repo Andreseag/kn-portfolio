@@ -12,7 +12,7 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(
     // Si size es número, lo convertimos a px para estilo; si es string, lo usamos directo.
     const width = typeof size === "number" ? `${size}px` : size;
     const mergedStyle = {
-      width,
+      // width,
       height: "auto",
       color,
       ...style,

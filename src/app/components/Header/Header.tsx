@@ -55,18 +55,16 @@ const Header = () => {
   };
 
   return (
-    /* Quitamos el 'fixed' del contenedor principal */
-    <header className="relative w-full z-[100]">
-      {/* La barra superior ahora es 'absolute'. 
-          Se quedará al principio del contenedor padre y subirá con el scroll.
-      */}
-      <div className="absolute top-0 left-0 w-full flex justify-center py-8 px-6 z-[110]">
+    <header className="relative w-full z-100">
+      {/* Overlay con gradiente vertical */}
+      <div className="absolute top-0 left-0 w-full h-40 bg-linear-to-b from-black/80 via-black/40 to-transparent z-0 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full flex justify-center py-8 px-6 z-110">
         <motion.div
           className="w-full max-w-7xl flex justify-between items-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}>
-          <Logo />
+          <Logo className="w-32 md:w-40" />
           <HamburgerButton
             open={open}
             setOpen={setOpen}
@@ -79,7 +77,7 @@ const Header = () => {
         {open && (
           /* El overlay se mantiene 'fixed' para cubrir la visual actual del usuario */
           <motion.div
-            className="fixed inset-0 bg-black flex items-center justify-center z-[100]"
+            className="fixed inset-0 bg-black flex items-center justify-center z-100"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
