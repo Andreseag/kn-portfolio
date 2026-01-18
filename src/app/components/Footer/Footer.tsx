@@ -19,14 +19,33 @@ const Footer = () => {
             </h2>
           </div>
           <div className="lg:text-2xl text-black flex flex-col gap-3 md:gap-6 items-end">
-            <p>contacto@epvarquitectura.com.ar</p>
-            <p>+54 9 3416 54-2001</p>
-            <p>Rosario Santa Fé</p>
+            <p>
+              <a
+                href="mailto:contacto@epvarquitectura.com.ar"
+                className="transition-colors duration-300 underline-offset-4 hover:underline">
+                rodriguezlarsson11@gmail.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="tel:+573219500664"
+                className="hover:underline transition-colors">
+                +57 321 950 06 64
+              </a>
+            </p>
+            <p>Villavicencio, Meta</p>
           </div>
         </div>
         <div className="text-black mt-20 flex items-center">
           <p className="md:w-[45%]">
-            © EPV Arquitectura | Diseño web por Andrés Castro
+            © Larsson Rodriguez | Diseño web por{" "}
+            <a
+              href="https://www.linkedin.com/in/andreseag/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline underline transition-colors cursor-pointer">
+              Andrés Castro
+            </a>
           </p>
           <div className="w-full hidden md:block h-px bg-black"></div>
         </div>

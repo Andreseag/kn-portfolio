@@ -12,7 +12,7 @@ const AgendCalendar = () => {
   return (
     <section
       id="agend-calendar"
-      className="agend-calendar py-24 px-6 md:px-10 bg-black">
+      className="agend-calendar py-12 md:py-24 px-6 md:px-10 bg-black">
       <div className="agend-calendar__container">
         <div className="agend-calendar__title">
           <h2 className="text-6xl md:text-9xl text-center text-[#a5925f] mb-6 md:mb-12 mt-4">

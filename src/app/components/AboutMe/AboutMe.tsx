@@ -7,7 +7,7 @@ const AboutMe = () => {
 
   return (
     <section id="about-me" className="about-me py-24 px-6 md:px-10 bg-black">
-      <div className="about-me__container flex flex-col-reverse md:flex-row gap-24">
+      <div className="about-me__container flex flex-col-reverse md:flex-row gap-12 md:gap-24">
         <div className="about-me__info md:w-1/2">
           <span>ESTUDIO DE ARQUITECTURA</span>
           <h2 className="text-7xl md:text-9xl text-[#a5925f] mb-8 mt-2">

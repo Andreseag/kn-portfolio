@@ -1,5 +1,11 @@
+export interface AccordionItem {
+  id: number;
+  title: string;
+  content: string;
+}
+
 // data/accordion.ts
-export const accordionItems = [
+export const accordionItemsDesign: AccordionItem[] = [
   {
     id: 1,
     title: "01 Anteproyecto",
@@ -22,6 +28,40 @@ A lo realizado anteriormente sumaremos la documentación gráfica, técnica y le
 Esta instancia es muy importante ya que direcciona el futuro del proyecto, nuestras carpetas de entrega reflejan un profundo compromiso y análisis de los elementos que intervienen en la obra y conforman una documentación detallada que permite minimizar posibles desvíos por imprevistos en el futuro.
 
 Finalizada esta etapa podremos dar comienzo al proceso de construcción. Los trabajos deberán ejecutarse de acuerdo a las reglas del arte de construcción y conforme a lo detallado en el listado de tareas y planos establecidos por nosotros.
+    `,
+  },
+];
+
+// data/accordion.ts
+export const accordionItemsEjection: AccordionItem[] = [
+  {
+    id: 1,
+    title: "03 Dirección de obra",
+    content: `
+Esta tarea consiste en la supervisión del proceso de ejecución y desarrollo de la obra en construcción, tiene por objetivo realizar un control sobre el avance y respetar fielmente las características generales y particulares del proyecto.
+
+Realizaremos un control estricto de las tareas y tiempos sobre el o las empresas contratistas que intervengan en la obra. Avalaremos mediante certificados de avance la liquidación de las tareas realmente ejecutadas. La tarea se complementa con la de gerenciamiento de obra que se constituye en la tarea técnico-administrativa por excelencia.`,
+  },
+  {
+    id: 2,
+    title: "04 Gerenciamiento de obra",
+    content: `
+Consiste en asumir el rol de gerentes de la obra durante su desarrollo, ya sea en el análisis de las variables económicas, técnicas, de recursos humanos y profesionales a intervenir. Garantiza una metodología de control eficiente que se rinde al cliente. Es una solución de gestión a medida de cada obra y su escala.
+
+Disponemos de un equipo interdisciplinario donde intervienen profesionales de todas las áreas vinculadas a la actividad de la construcción: Arquitectos, Ingenieros Civiles, Eléctricos, Agrimensores, Contadores, Escribanos, Especialistas en Higiene y Seguridad y en Administración.
+
+El alcance de este servicio abarca las siguientes tareas:
+
++ Definición de estrategia de implementación, cantidad y apertura de contratos.
++ Elaboración de cronograma de obras.
++ Elaboración de pliego de bases y condiciones generales para la contratación de obras y/o servicios.
++ Elaboración de contrato tipo de locación de obra y/o servicios.
++ Elaboración de planilla de presupuestos.
++ Elaboración de listado sugerido de posibles proveedores.
++ Llamado a cotización y recepción de ofertas.
++ Estudio de ofertas, nivelación de propuestas y elaboración de comparativas.
++ Llamado a mejoramiento de ofertas, nivelación de las propuestas, re-elaboración de comparativas y elaboración de informe conclusivo para definir contratación.
++ Gestión de compra final y validación de las ofertas.
     `,
   },
 ];
