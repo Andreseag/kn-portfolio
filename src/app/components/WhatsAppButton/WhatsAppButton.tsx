@@ -28,7 +28,7 @@ const WhatsAppButton = ({
       animate={{ opacity: 1, scale: 1, y: 0 }}
       whileHover={{ scale: 1.1, backgroundColor: "#25D366" }} // Cambia a verde WhatsApp al pasar el mouse
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-8 right-8 z-999 cursor-pointer bg-black text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-colors duration-300"
+      className="fixed bottom-4 right-4 z-999 cursor-pointer bg-black text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-colors duration-300"
       aria-label="Contactar por WhatsApp">
       {/* SVG OFICIAL DE WHATSAPP */}
       <svg

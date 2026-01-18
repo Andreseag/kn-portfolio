@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Larson Rodriguez | Arquitectura e Interiores",
+  title: "Larsson Rodriguez | Arquitectura e Interiores",
   description:
     "Estudio de arquitectura e interiores enfocado en diseño personalizado, espacios funcionales y soluciones contemporáneas para cada proyecto.",
 };

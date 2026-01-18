@@ -14,8 +14,8 @@ const AboutMe = () => {
             Sobre mí
           </h2>
           <p className="mb-14 text-lg">
-            <span className="text-[#a5925f] font-bold">Larson Rodriguez</span>{" "}
-            es arquitecto titulado y dirige su propio estudio, Larson Rodriguez
+            <span className="text-[#a5925f] font-bold">Larsson Rodriguez</span>{" "}
+            es arquitecto titulado y dirige su propio estudio, Larsson Rodriguez
             | Arquitectura e Interiores. Su trabajo se centra en el desarrollo
             integral de proyectos y en la ejecución de obras de vivienda
             unifamiliar y vivienda colectiva, con especial atención a la
@@ -52,7 +52,7 @@ const AboutMe = () => {
                 proyectos residenciales en altura.
               </p>
               <p>
-                2018–Actualidad | Dirección del estudio Larson Rodriguez |
+                2018–Actualidad | Dirección del estudio Larsson Rodriguez |
                 Arquitectura e Interiores, donde se desarrollan proyectos
                 residenciales y comerciales, desde la idea conceptual hasta la
                 obra terminada.

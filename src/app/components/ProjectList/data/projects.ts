@@ -15,10 +15,10 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Casa LR",
+    title: "Vivienda Colectiva CC",
     slug: "casa-lr",
     image:
-      "https://epvarquitectura.com.ar/wp-content/uploads/2024/06/Portada-1.webp",
+      "https://epvarquitectura.com.ar/wp-content/uploads/2025/01/PORTADA-WEB.jpg",
   },
   {
     id: 3,

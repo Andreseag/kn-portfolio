@@ -1,13 +1,13 @@
-"use client";
-import { useEffect, useState } from "react";
+// "use client";
+// import { useEffect, useState } from "react";
 import Logo from "../Logo";
 
 const AgendCalendar = () => {
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
   return (
     <section
@@ -24,24 +24,14 @@ const AgendCalendar = () => {
         </div>
 
         <div className="calendar mt-4">
-          {/* Solo renderizamos el widget si el componente ya se montó en el cliente */}
-          {/* {mounted ? (
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/andreseag/15min"
-              style={{ minWidth: "320px", height: "700px" }}></div>
-          ) : (
-            // Un div vacío con la misma altura para evitar saltos visuales (CLS)
-            <div style={{ minWidth: "320px", height: "700px" }}></div>
-          )} */}
           <div
             className="calendly-inline-widget"
-            data-url="https://calendly.com/andreseag/15min"
+            data-url="https://calendly.com/rodriguezlarsson11/30min?hide_gdpr_banner=1%22"
             style={{ minWidth: "320px", height: "700px" }}></div>
         </div>
 
-        <div className="agend-calendar__logo flex justify-center mt-10">
-          <Logo />
+        <div className="agend-calendar__logo flex justify-center mt-16 md:mt-10">
+          <Logo className=" w-38 md:w-48" />
         </div>
       </div>
     </section>

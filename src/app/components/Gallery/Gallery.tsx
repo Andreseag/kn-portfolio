@@ -15,7 +15,7 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[450px] md:h-screen w-full overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={sliderImages[index].id}

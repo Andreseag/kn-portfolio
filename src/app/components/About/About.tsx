@@ -1,22 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import useMousePosition from "../../hooks/useMousePosition";
 import { RotateWords } from "./components/RotateWords";
+import { useScrollTo } from "@/app/hooks/useScrollTo";
+import CustomButton from "../CutomButton/CutomButton";
 
 // Tipado del hook si no lo tiene
-interface MousePosition {
-  x: number | null;
-  y: number | null;
-}
 
 export default function About() {
-  const [isHovered, setIsHovered] = useState<boolean>(false);
-  const { x, y } = useMousePosition();
-  const xNum = x ?? 0;
-  const yNum = y ?? 0;
-
-  const size = isHovered ? 400 : 40;
+  const { scrollToElement } = useScrollTo();
 
   return (
     <section className="py-24 lg:py-48">
@@ -62,6 +53,14 @@ export default function About() {
             los habitan, buscando soluciones funcionales, claras y pensadas a
             medida.
           </p>
+
+          <div className="flex justify-center mt-12 md:mt-20">
+            <CustomButton
+              txt="AGENDA UNA SESIÓN"
+              variant="light"
+              onClick={() => scrollToElement("agend-calendar")}
+            />
+          </div>
         </div>
       </div>
     </section>
