@@ -58,9 +58,9 @@ const Header = () => {
     <header className="relative w-full z-100">
       {/* Overlay con gradiente vertical */}
       <div className="absolute top-0 left-0 w-full h-40 bg-linear-to-b from-black/80 via-black/40 to-transparent z-0 pointer-events-none" />
-      <div className="absolute top-0 left-0 w-full flex justify-center py-8 px-6 z-110">
+      <div className="absolute top-0 left-0 w-full flex justify-center py-8 px-8 md:px-20 z-110">
         <motion.div
-          className="w-full max-w-7xl flex justify-between items-center"
+          className="w-full flex justify-between items-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}>

@@ -1,3 +1,5 @@
+"use client";
+
 import { useScrollTo } from "@/app/hooks/useScrollTo";
 import CustomButton from "../CutomButton/CutomButton";
 
