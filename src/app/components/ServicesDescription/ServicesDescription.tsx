@@ -14,7 +14,9 @@ const ServicesDescription = () => {
             <div className="service-element flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="service-element__description text-black w-full md:w-2/5">
                 <div>Servicios</div>
-                <h3 className="text-7xl lg:text-9xl mb-6">Diseño</h3>
+                <h3 className="text-6xl sm:text-7xl lg:text-9xl mb-6">
+                  Diseño
+                </h3>
                 <p className=" lg:text-lg lg:leading-8">
                   El proceso de diseño se encuentra conformado por dos etapas,
                   cada una atiende exigencias de diferentes escalas y está
@@ -30,7 +32,9 @@ const ServicesDescription = () => {
             <div className="service-element flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="service-element__description text-black w-full md:w-2/5">
                 <div>Servicios</div>
-                <h3 className="text-7xl lg:text-9xl mb-6">Ejecución de obra</h3>
+                <h3 className="text-6xl sm:text-7xl lg:text-9xl mb-6">
+                  Ejecución de obra
+                </h3>
                 {/* <p className="text-lg leading-8">
               El proceso de diseño se encuentra conformado por dos etapas, cada
               una atiende exigencias de diferentes escalas y está compuesta por

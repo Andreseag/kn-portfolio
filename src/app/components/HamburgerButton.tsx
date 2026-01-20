@@ -41,7 +41,7 @@ export function HamburgerButton({
       aria-label={open ? "Cerrar menú" : "Abrir menú"}
       aria-expanded={open}
       onClick={() => setOpen((v: boolean) => !v)}
-      className={`inline-flex items-center justify-center p-2 rounded-md text-current ${className}`}>
+      className={`text-white inline-flex items-center justify-center p-2 rounded-md ${className}`}>
       {/* contenedor relativo controla el tamaño del icono */}
       <div
         className="relative"

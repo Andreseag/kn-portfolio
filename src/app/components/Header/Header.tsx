@@ -5,6 +5,7 @@ import { motion, AnimatePresence, Variants } from "motion/react";
 import Logo from "../Logo";
 import { HamburgerButton } from "../HamburgerButton";
 import { useScrollTo } from "@/app/hooks/useScrollTo";
+import { useRouter } from "next/navigation";
 
 const links = [
   { label: "Inicio", id: "inicio" },
@@ -39,6 +40,7 @@ const itemVariants: Variants = {
 const Header = () => {
   const [open, setOpen] = useState(false);
   const { scrollToElement } = useScrollTo();
+  const router = useRouter();
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "auto";
@@ -49,6 +51,12 @@ const Header = () => {
 
   const handleNavClick = (id: string) => {
     setOpen(false);
+
+    if (id === "inicio") {
+      router.push("/");
+      return;
+    }
+
     setTimeout(() => {
       scrollToElement(id);
     }, 450);

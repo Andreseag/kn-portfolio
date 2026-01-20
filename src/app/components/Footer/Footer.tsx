@@ -16,7 +16,7 @@ const Footer = () => {
               variant="light"
               onClick={() => scrollToElement("agend-calendar")}
             />
-            <h2 className="text-7xl md:text-8xl text-black md:leading-28 mt-20">
+            <h2 className="text-6xl sm:text-7xl md:text-8xl text-black md:leading-28 mt-20">
               Larsson Rodriguez
             </h2>
           </div>

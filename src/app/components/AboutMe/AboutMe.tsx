@@ -9,11 +9,11 @@ const AboutMe = () => {
     <section id="about-me" className="about-me py-24 px-6 md:px-10 bg-black">
       <div className="about-me__container flex flex-col-reverse md:flex-row gap-12 md:gap-24">
         <div className="about-me__info md:w-1/2">
-          <span>ESTUDIO DE ARQUITECTURA</span>
+          <span className="text-white">ESTUDIO DE ARQUITECTURA</span>
           <h2 className="text-7xl md:text-9xl text-[#a5925f] mb-8 mt-2">
             Sobre mí
           </h2>
-          <p className="mb-14 text-lg">
+          <p className="mb-14 text-white md:text-lg">
             <span className="text-[#a5925f] font-bold">Larsson Rodriguez</span>{" "}
             es arquitecto titulado y dirige su propio estudio, Larsson Rodriguez
             | Arquitectura e Interiores. Su trabajo se centra en el desarrollo
@@ -24,10 +24,10 @@ const AboutMe = () => {
           </p>
 
           <div className="mb-14">
-            <h6 className="text-lg mb-4 font-bold">
+            <h3 className="text-lg mb-4 font-bold text-white">
               Algunos hitos de su carrera:
-            </h6>
-            <div className="text-lg">
+            </h3>
+            <div className="text-white md:text-lg">
               <p>
                 2014 | Colaboración en estudios de arquitectura dedicados al
                 diseño residencial y a la ejecución de obra.
@@ -60,8 +60,8 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="mb-14 text-lg">
-            <h6 className="mb-4 font-bold">Equipo y red de talentos:</h6>
+          <div className="mb-14 text-white md:text-lg">
+            <h3 className="mb-4 font-bold">Equipo y red de talentos:</h3>
             <p>Arq. — Coordinación de proyectos y documentación.</p>
             <p>Arq. — Dirección de obra y supervisión técnica.</p>
             <p>Diseñador/a — Proyecto y desarrollo de interiores.</p>
